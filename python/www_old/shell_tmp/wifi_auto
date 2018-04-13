@@ -1,0 +1,26 @@
+#! /bin/sh 
+
+list_file = /tmp/wifi/wifi_list
+list_save = /tmp/wifi/wifi_save
+iwinfo wlan0 scan | grep ESSID | awk '{print $NF}' | sed 's/\"//g' > $list_file
+ 
+num=$(awk '{print NR}' $list_file | tail -n1)
+i=1
+if [ ! -n "$num" ];then
+	exit
+fi
+while [ $i -le $num ]
+do
+	ret=$(sed -n "${i}p" $list_file)
+	if [ "$ret" == '' ];then
+		i=$(($i+1))
+		continue
+	fi		
+	ret1=$(grep -i $ret $list_save)
+	if [ "$ret1" != '' ];then
+		 echo $ret1
+		 break
+	else
+		i=$(($i+1))
+	fi
+done

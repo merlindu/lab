@@ -1,0 +1,73 @@
+html {
+  min-width: 350px;
+}
+.section-devider {
+  margin-bottom: 10px;
+}
+.card .card-content {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 10px;
+}
+.card .card-image .card-title {
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 2px;
+  padding-left: 5px;
+  font-size: inherit;
+}
+.filter-checkbox, .filter-rescan {
+  width: auto !important;
+}
+.filter-cal {
+  float: left;
+  width: auto;
+  margin-right: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+[type="checkbox"]+span {
+  padding-left: 25px !important;
+  margin-right: 5px;
+  font-size: 1.2rem !important;
+}
+[type="checkbox"]:checked+span {
+  color: #28a49c;
+  font-weight: bold;
+}
+button {
+  text-transform: capitalize !important;
+  padding: 0 0.5rem !important;
+}
+@media only screen and (min-width: 601px) {
+  button {
+    padding: 0 0.5rem !important;
+  }
+}
+[disabled]{
+  cursor: not-allowed;
+}
+.col.s12 .container .row .col.s3.m4 .input-field {
+  margin-top: 2px;
+  margin-bottom: 15px;
+}
+.col.s12 .container .row .col {
+  padding: 0px;
+}
+.modal {
+  height: 80%;
+  max-height: 80%;
+  width: 80%;
+}
+.modal .modal-content,.modal .modal-content .col {
+  padding: 2px;
+}
+.flow-text {
+  word-wrap: break-word;
+}
+.library-name {
+  width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}

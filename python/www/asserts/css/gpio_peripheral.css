@@ -1,0 +1,96 @@
+.row .colume {
+  width: 10%;
+  margin-left: auto;
+  left: auto;
+  right: auto;
+  float: left;
+}
+.block-pins{
+  margin: 0px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.block-pins:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.pin-wrapper {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  height: 72px;
+  text-align: center;
+  float: left;
+  border: 1px solid #ffffff;
+  line-height: 82px;
+}
+.block.pin-wrapper {
+  width: 42px;
+}
+.legend.pin-wrapper {
+  width: 100%;
+}
+
+.block.pin {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius:50%;
+}
+.block.pin {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius:50%;
+}
+.block.legend.pin{
+  width: 100%;
+  border-radius:0;
+}
+
+.content {
+  height: 20px;
+  padding-bottom: 10px;
+  line-height: 20px;
+}
+.block.content {
+  width: 40px;
+}
+
+.pin.default {
+  background-color: #6d4c41 !important;
+}
+.pin.disabled {
+  background-color: #bdbdbd !important;
+}
+.pin.active {
+  background-color: #4caf50 !important;
+}
+.pin.gpio {
+  background-color: #01579b !important;
+}
+.pin.function {
+  background-color: #ff5722 !important;
+}
+
+.operate {
+  width: 100%;
+  border: 1px solid #ffffff;
+  height: 40px;
+  line-height: 40px;
+  text-align: center !important;
+}
+
+.btn {
+  text-transform: capitalize;
+}
+#operate_confirm button {
+  width: 100%;
+  padding-right: 0px;
+  padding-left: 0px;
+  bottom: 0;
+}
+html {
+  min-width: 300px;
+}
